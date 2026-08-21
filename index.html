@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="RichLearnCode - Learn HTML, CSS and JavaScript for beginners.">
+
+    <title>RichLearnCode | Learn HTML, CSS & JavaScript</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #071a2b;
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav h1 {
+            color: #00a651;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #00a651;
+        }
+
+        .hero {
+            background: #00a651;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: white;
+            color: #008f46;
+            padding: 12px 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #008f46;
+            margin-bottom: 15px;
+        }
+
+        section h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #123b5d;
+        }
+
+        .lesson {
+            border-left: 5px solid #00a651;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+
+        pre {
+            background: #111827;
+            color: #e5e7eb;
+            padding: 18px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        .exercise {
+            background: #fff7df;
+            border-left: 5px solid #e0a800;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+
+        .remember {
+            background: #e9f7ef;
+            border-left: 5px solid #00a651;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        ul {
+            margin: 10px 0 10px 25px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00a651;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: #00a651;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .buy-button:hover {
+            background: #008f46;
+        }
+
+        footer {
+            background: #071a2b;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .top-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #00a651;
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<header>
+    <nav>
+        <h1>RichLearnCode 💻</h1>
+
+        <div>
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#javascript">JavaScript</a>
+            <a href="#project">Project</a>
+        </div>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <h2>Learn Web Development 🚀</h2>
+
+    <p>
+        Learn HTML, CSS and JavaScript from beginner level
+        and start building your own websites.
+    </p>
+
+    <a class="button" href="#html">
+        Start Learning
+    </a>
+
+</section>
+
+
+<main class="container">
+
+    <!-- HTML -->
+
+    <section id="html">
+
+        <h2>🧱 HTML for Beginners</h2>
+
+        <p>
+            HTML stands for
+            <strong>HyperText Markup Language</strong>.
+            It is the standard language used to create
+            and structure webpages.
+        </p>
+
+        <div class="remember">
+            <strong>Remember:</strong>
+            HTML mainly provides the structure of a webpage.
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>1. Basic HTML Structure</h3>
+
+            <p>
+                Every HTML webpage normally starts with
+                a basic document structure.
+            </p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>2. HTML Tags</h3>
+
+            <p>
+                HTML uses tags to tell the browser
+                what different pieces of content are.
+            </p>
+
+<pre><code>&lt;h1&gt;My Website&lt;/h1&gt;</code></pre>
+
+            <p>
+                <strong>&lt;h1&gt;</strong> is the opening tag.
+                <br>
+                <strong>My Website</strong> is the content.
+                <br>
+                <strong>&lt;/h1&gt;</strong> is the closing tag.
+            </p>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>3. Common HTML Tags</h3>
+
+            <ul>
+                <li>&lt;h1&gt; to &lt;h6&gt; — Headings</li>
+                <li>&lt;p&gt; — Paragraph</li>
+                <li>&lt;br&gt; — Line break</li>
+                <li>&lt;hr&gt; — Horizontal line</li>
+                <li>&lt;img&gt; — Image</li>
+                <li>&lt;a&gt; — Link</li>
+                <li>&lt;button&gt; — Button</li>
+                <li>&lt;ul&gt; — Unordered list</li>
+                <li>&lt;ol&gt; — Ordered list</li>
+                <li>&lt;li&gt; — List item</li>
+                <li>&lt;form&gt; — Form</li>
+                <li>&lt;input&gt; — Input field</li>
+                <li>&lt;div&gt; — Container</li>
+            </ul>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>4. Links</h3>
+
+<pre><code>&lt;a href="https://example.com"&gt;
+    Visit Website
+&lt;/a&gt;</code></pre>
+
+            <p>
+                The <strong>href</strong> attribute tells
+                the browser where the link should go.
+            </p>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>5. Images</h3>
+
+<pre><code>&lt;img src="picture.jpg"
+     alt="A picture"&gt;</code></pre>
+
+            <p>
+                <strong>src</strong> specifies the image location.
+                <br>
+                <strong>alt</strong> provides alternative text
+                describing the image.
+            </p>
+
+        </div>
+
+
+        <div class="exercise">
+
+            <strong>📝 HTML Practice</strong>
+
+            <p>
+                Create a webpage containing:
+            </p>
+
+            <ul>
+                <li>Your name</li>
+                <li>A short introduction</li>
+                <li>An image</li>
+                <li>A link</li>
+                <li>A list of your hobbies</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- CSS -->
+
+    <section id="css">
+
+        <h2>🎨 CSS for Beginners</h2>
+
+        <p>
+            CSS stands for
+            <strong>Cascading Style Sheets</strong>.
+            CSS controls how HTML content looks.
+        </p>
+
+        <div class="remember">
+            <strong>Remember:</strong>
+            HTML = Structure.
+            CSS = Style.
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>1. Basic CSS</h3>
+
+<pre><code>h1 {
+    color: blue;
+    font-size: 40px;
+}</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>2. CSS Selectors</h3>
+
+            <p>Element selector:</p>
+
+<pre><code>p {
+    color: black;
+}</code></pre>
+
+            <p>Class selector:</p>
+
+<pre><code>.intro {
+    color: green;
+}</code></pre>
+
+            <p>ID selector:</p>
+
+<pre><code>#title {
+    color: red;
+}</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>3. Useful CSS Properties</h3>
+
+<pre><code>color: blue;
+
+background-color: white;
+
+font-size: 20px;
+
+text-align: center;
+
+margin: 20px;
+
+padding: 20px;
+
+border: 1px solid black;</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>4. Flexbox</h3>
+
+<pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}</code></pre>
+
+        </div>
+
+
+        <div class="exercise">
+
+            <strong>📝 CSS Practice</strong>
+
+            <p>
+                Create a card and give it:
+            </p>
+
+            <ul>
+                <li>A background color</li>
+                <li>Padding</li>
+                <li>A border</li>
+                <li>A width</li>
+                <li>Rounded corners</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+
+    <section id="javascript">
+
+        <h2>⚡ JavaScript for Beginners</h2>
+
+        <p>
+            JavaScript is a programming language commonly
+            used to make webpages interactive.
+        </p>
+
+        <div class="remember">
+            <strong>Remember:</strong>
+            HTML = Structure.
+            CSS = Style.
+            JavaScript = Behaviour.
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>1. Variables</h3>
+
+<pre><code>let name = "Alex";
+
+let age = 20;
+
+const country = "Ghana";</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>2. Conditions</h3>
+
+<pre><code>let age = 18;
+
+if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are under 18.");
+}</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>3. Functions</h3>
+
+<pre><code>function greet(name) {
+    console.log("Hello " + name);
+}
+
+greet("Alex");</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>4. Arrays</h3>
+
+<pre><code>let fruits = [
+    "Apple",
+    "Banana",
+    "Orange"
+];
+
+console.log(fruits[0]);</code></pre>
+
+        </div>
+
+
+        <div class="lesson">
+
+            <h3>5. Making a Button Interactive</h3>
+
+<pre><code>&lt;button id="myButton"&gt;
+    Click Me
+&lt;/button&gt;</code></pre>
+
+<pre><code>const button =
+    document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+
+    alert("Button clicked!");
+
+});</code></pre>
+
+        </div>
+
+
+        <div class="exercise">
+
+            <strong>📝 JavaScript Practice</strong>
+
+            <p>
+                Create a button that changes the text
+                of a heading when the user clicks it.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL PROJECT -->
+
+    <section id="project">
+
+        <h2>🎯 Final Beginner Project</h2>
+
+        <h3>Personal Profile Website</h3>
+
+        <p>
+            Build your own personal profile website
+            using HTML, CSS and JavaScript.
+        </p>
+
+        <h3>Your website should contain:</h3>
+
+        <ul>
+            <li>A navigation bar</li>
+            <li>An introduction section</li>
+            <li>An About Me section</li>
+            <li>Your hobbies or skills</li>
+            <li>A contact form</li>
+            <li>Responsive styling</li>
+            <li>At least two JavaScript interactions</li>
+        </ul>
+
+        <div class="remember">
+
+            <strong>🔥 Challenge:</strong>
+
+            Don't just copy the examples.
+
+            Change the text, colors and design
+            and make the website your own.
+
+        </div>
+
+    </section>
+
+
+    <!-- PDF -->
+
+    <section>
+
+        <h2>📚 Full HTML Notes</h2>
+
+        <p>
+            Want the complete beginner notes with
+            additional explanations, exercises and
+            projects?
+        </p>
+
+        <p class="price">
+            GH₵20
+        </p>
+
+        <p>
+            Pay with MoMo and receive the PDF.
+        </p>
+
+        <!-- Replace 233XXXXXXXXXX with your real WhatsApp number -->
+
+        <a
+            class="buy-button"
+            href="https://wa.me/0594929212?text=Hi%20I%20want%20the%20HTML%20CSS%20JavaScript%20notes"
+            target="_blank">
+
+            📱 Get the Full Notes
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <h2>RichLearnCode 💻</h2>
+
+    <p>
+        Learn. Practice. Build.
+    </p>
+
+    <p>
+        © 2026 RichLearnCode
+    </p>
+
+</footer>
+
+
+<button
+    class="top-button"
+    id="topButton"
+    onclick="goTop()">
+
+    ↑
+
+</button>
+
+
+<script>
+
+    // Show the back-to-top button
+    // when the user scrolls down.
+
+    const topButton =
+        document.getElementById("topButton");
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 300) {
+
+            topButton.style.display = "block";
+
+        } else {
+
+            topButton.style.display = "none";
+
+        }
+
+    });
+
+
+    // Scroll back to the top.
+
+    function goTop() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+</script>
+
+</body>
+  </html>
